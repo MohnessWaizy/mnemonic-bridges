@@ -1,0 +1,32 @@
+This sample contains frequency information for every tenth word (word #131, 141, 151, etc) in the top 60,000 word list from iWeb.
+-- The list is lemmatized, meaning that all "inflected" forms are included. For example, "get" (#41) is 
+the combined frequency of get, gets, got, gotten, and getting.
+-- There is also a "word forms" list, which has each form and its frequency as separate columns.
+
+-------------------------------
+
+More information:
+
+https://www.wordfrequency.info: Word frequency lists (from iWeb, COCA, and more)
+https://corpus.byu.edu/iweb/: iWeb corpus (14 billion words, 22 million words, 95,000 selected websites)
+http://davies-linguistics.byu.edu/: Mark Davies (creator of the iWeb corpus)
+
+-------------------------------
+
+-- A word may appear multiple times in the list, each for a different part of speech (e.g. "strike" as a noun and as a verb).
+-- Some words are parts of multi-word expressions, especially for adverbs ("r"), conjunctions ("c"), and prepositions ("i").
+For example, "light" as a preposition (#6592) is part of the phrase "in light of".
+
+* "wordID" corresponds in most cases to the ranking (1-60,000). It can safely be ignored in most cases, although it will provide a 
+way to match up this data with the collocates or n-grams data.
+* pos = part of speech (the first letter from the PoS codes at http://ucrel.lancs.ac.uk/claws7tags.html)
+* "Range" is the percentage of the ~95,000 websites that have the word at least once.
+* "Range10" is the percentage of the ~95,000 websites that have the word at least ten times.
+* "Caps" is the percentage of forms of the word that are capitalized. This is especially useful for nouns, where 
+capitalization is often a marker of proper nouns. (Proper nouns are not included in the list, but there are
+many words that "straddle" the line between common and proper nouns, e.g. Rice/rice, Brown/brown, Beach/beach).
+
+
+rank	wordID	word	PoS	frequency	range	range10	caps
+-----	-----	-----	-----		-----	-----	-----	-----
+
